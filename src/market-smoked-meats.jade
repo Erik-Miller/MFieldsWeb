@@ -1,0 +1,66 @@
+extends _layouts/base
+
+include _modules/link/link
+include mixins
+
+
+body(style="padding:0rem;")
+block content
+	+navigation
+	+secondarypage-header('THE MARKET', 'Smoked Meats & More')
+	+secondarypage-hero('images/FinalImages/0308.jpg')
+	+phone
+	
+	.container-fluid.market-content
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				p Summer Sausage	
+				p Holiday Summer Sausage
+				p Pepper Coated Summer Sausage	
+				p Braunschweiger	
+				p Natural Casing Wieners (3 varieties)	
+				p Polish Sausage		
+				p Kranski			
+				p Andouille				
+				p Ring Bologna	
+				p Straight Bologna	
+				p Ring Liver	
+				p Dried Beef	
+				p Blood Rice	
+				p Chorizo	
+				p Rindawurst	
+				p Russowurst	
+				p Breakfast Sausage
+			.col-xs-12.col-sm-5
+				p Landjaeger Snack Sticks
+				p Double Smoked Landjaeger
+				p Jalapeno Cheddar Snack Stick	
+				p Bloody Mary Snack Stick
+				p Pepper Snack Sticks
+				p Cajun Snack Stick
+				p Bahama Mamma Snack Stick		
+				p Cheddar Snack Sticks
+				p Tex Mex Snack Sticks
+				p Honey BBQ Chicken Snack Sticks				
+				p Honey Ham Snack Sticks				
+				p Teriyaki and Peppered Teriyaki Beef Strips				
+				p Boneless Gourmet Ham				
+				p Boneless Mini-Ham				
+				p Ham Grenade	
+				p Home Smoked Bacon 					
+				p Apple Pie Seasoned Bacon 				
+				p Pepper coated Bacon						
+				p Cottage Bacon
+				p Bone-In Hams (Old Fashioned & Semi- boneless) **
+				p ** Available at Christmas and Easter Only
+
+
+	.container-fluid
+		.row
+			.col-xs-12.image-caption
+				p This is just a partial list of the many items we have available in the over 75 feet of meat case in our store. Please stop in to see it for yourself!
+			.col-xs-12.full-width
+				img.img-responsive(src='images/FinalImages/0030-Edit.jpg')
+	+contact('Contact Us', 'Contact us for more information or to place an order!')
+	+footer
+

@@ -1,0 +1,293 @@
+extends _layouts/base
+
+include mixins
+
+
+body(style="padding:0rem;")
+block content
+    
+    +navigation
+    .container-fluid.hero-container
+        .row
+            .col-xs-12.hero-row.hidden-xs
+                img.hero-img.img-responsive(src='images/FinalImages/MWP_8614.jpg')
+            .col-xs-12.hero-row.visible-xs
+                img.hero-img.img-responsive(src='images/FinalImages/Landingimage.jpg')
+     +phone
+        // About Us Section
+    .container-fluid.about-us-container
+        .row.about-us
+            .col-xs-12.col-sm-6.full-width
+                img.img-responsive.img-max-height(src='images/FinalImages/0415.jpg')
+            .col-xs-12.col-sm-6.about-us-content
+                h2 Our Mission
+                p Three generations and over 75 years later we are still providing our customers with quality guaranteed meats and friendly personal service. By maintaining our strong values, we continue to grow as a company as well as contribute to our community.
+        .row.who-we-are-content
+            .col-xs-12
+                h2 Who We Are
+                p Miesfeld’s Meat Market (since 1941) is a family-owned and operated meat market located in Sheboygan, Wisconsin. Our knowledgeable, dedicated staff is committed to providing our customers and partners with quality products and services that exceed their expectations.
+        .row
+            .col-xs-12.full-width
+                img.img-responsive(src="images/FinalImages/0168.jpg")
+            // The Market Section
+
+        //Mobile
+    .container-fluid.visible-xs
+        .row.section-header.market-container
+            .col-xs-12
+                h2 The Market
+        .row
+            .col-xs-6.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-originals.html") Originals
+                a.market(href="market-originals.html")
+                    img.img-responsive(src='images/FinalImages/0382.jpg')
+            .col-xs-6.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-smoked-meats.html") Smoked Meats & More
+                a.market(href="market-smoked-meats.html")
+                    img.img-responsive(src='images/FinalImages/HomeSmokedMeats.jpg')
+            .col-xs-12.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-freshmeats.html") Fresh Meats
+                a.market(href="market-freshmeats.html")
+                    img.img-responsive(src='images/FinalImages/0311-Edit.jpg')
+        
+        .row
+            .col-xs-6.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-wine-beer.html") Wine & Beer
+                a.market(href="market-wine-beer.html")
+                    img.img-responsive(src='images/FinalImages/0405.jpg')
+        
+            .col-xs-6.col-sm-offset-4.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-frozenitems.html") Frozen Items
+                a.market(href="market-frozenitems.html")
+                    img.img-responsive(src='images/FinalImages/0372.jpg')
+        
+        .row.secondary-header
+            .col-xs-6.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-chefs.html") Chef's Corner
+                a.market(href="market-chefs.html")
+                    img.img-responsive(src='images/FinalImages/0096-Edit.jpg')
+            .col-xs-6.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-cheese.html") Cheese
+                a.market(href="market-cheese.html")
+                    img.img-responsive(src='images/FinalImages/0011-Edit.jpg')
+            .col-xs-12.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-bratwurst.html") Bratwurst
+                a.market(href="market-bratwurst.html")
+                    img.img-responsive(src='images/FinalImages/0229.jpg')
+                
+
+        //Desktop      
+    .container-fluid.hidden-xs
+        .row.section-header.market-container
+            .col-xs-12
+                h2 The Market
+        .row.secondary-header.market-row-adjust
+            .col-xs-6.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-originals.html") Miesfeld's Originals
+                a.market(href="market-originals.html")
+                    img.img-responsive(src='images/FinalImages/0382.jpg')
+
+            .col-xs-6.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-freshmeats.html") Fresh Meats
+                a.market(href="market-freshmeats.html")
+                    img.img-responsive(src='images/FinalImages/0318-Edit-Edit.jpg')
+            .col-xs-12.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-smoked-meats.html") Smoked Meats & More
+                a.market(href="market-smoked-meats.html")
+                    img.img-responsive(src='images/FinalImages/HomeSmokedMeats.jpg')
+
+        .row.secondary-header
+            .col-xs-6.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-bratwurst.html") Bratwurst
+                a.market(href="market-bratwurst.html")
+                    img.img-responsive(src='images/FinalImages/0229.jpg')
+            .col-xs-6.col-sm-offset-4.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-frozenitems.html") Frozen Items
+                a.market(href="market-frozenitems.html")
+                    img.img-responsive(src='images/FinalImages/0372.jpg')
+        .row.secondary-header
+            .col-xs-6.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-chefs.html") Chef's Corner
+                a.market(href="market-chefs.html")
+                    img.img-responsive(src='images/FinalImages/0058.jpg')
+            .col-xs-6.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-cheese.html") Cheese
+                a.market(href="market-cheese.html")
+                    img.img-responsive(src='images/FinalImages/0011-Edit.jpg')
+            .col-xs-12.col-sm-4.full-width
+                .market-description-small
+                    a.market(href="market-wine-beer.html") Wine & Beer
+                a.market(href="market-wine-beer.html")
+                    img.img-responsive(src='images/FinalImages/0405.jpg')
+
+
+        // Specials
+    .container-fluid.specials-section#market
+        .row.specials-row#specials-row
+            .col-xs-12.col-sm-6.full-width
+                img.img-responsive.img-max-height(src='images/FinalImages/specials-home.jpg')
+            .col-xs-12.col-sm-6.specials-content
+                h2 Specials
+                a(href="images/Miesfelds_weekly_specials.pdf" target="_blank")
+                    .button View This Weeks Specials
+
+        // Newsletter
+    .container-fluid.newsletter-container
+        .row.newsletter-row
+            .col-xs-12.col-sm-8.newsletter-content
+                h2 Miesfeld's Updates
+                p Sign up to get info on specials, recipes, events and all things Miesfeld’s.
+            .col-xs-12.col-sm-4.newsletter-button
+                a.mc-modal
+                    .button-second Sign Up
+
+    // Mailchimp Signup Form
+    // Begin MailChimp Signup Form
+    .container-fluid
+        .row#mailchimp-fields
+            .col-xs-12
+                
+                // Begin MailChimp Signup Form
+                #mc_embed_signup
+                  form#mc-embedded-subscribe-form.validate(action='//miesfelds.us13.list-manage.com/subscribe/post?u=75ac1b3c8be965af909b0d41c&id=bc09e24e83', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+                    #mc_embed_signup_scroll
+                      h2 Subscribe for more information about Miesfeld’s
+                      .indicates-required
+                        span.asterisk *
+                        |  indicates required
+                      .mc-field-group
+                        label(for='mce-EMAIL')
+                          | Email Address  
+                          span.asterisk *
+                        input#mce-EMAIL.required.email(type='email', value='', name='EMAIL')
+                      .mc-field-group
+                        label(for='mce-FNAME') First Name 
+                        input#mce-FNAME(type='text', value='', name='FNAME')
+                      .mc-field-group
+                        label(for='mce-LNAME') Last Name 
+                        input#mce-LNAME(type='text', value='', name='LNAME')
+                      #mce-responses.clear
+                        #mce-error-response.response(style='display:none')
+                        #mce-success-response.response(style='display:none')
+                      // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                      div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                        input(type='text', name='b_75ac1b3c8be965af909b0d41c_bc09e24e83', tabindex='-1', value='')
+                      .clear
+                        input#mc-embedded-subscribe.button(type='submit', value='Subscribe', name='subscribe')
+                        a.mc-close Cancel 
+                            
+                script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
+                script(type='text/javascript').
+                  (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+                // End mc_embed_signup
+
+    // Grill Tips and Recipes
+
+    .container-fluid.grill-tips-container
+        .row.section-header
+            .col-xs-12.grill-tips-content
+                h2 Grill Tips and Recipes
+                a(href="Grill-Tips-Recipes.html")
+                    .button-second View All 
+    // Game Processing
+    .container-fluid.game-processing-container           
+        .row.white-bg
+            .col-xs-12.game-processing-content
+                h2.section-header Game Processing
+                img.img-responsive.img-max-height(src='images/FinalImages/GameProcessingHome.jpg')
+                p.secondary-header.game-header Processing includes Skinning & Cutting, Grinding, Sausages and more...
+                a(href="game-processing.html")
+                    .button View Pricing
+                
+            
+            
+    // Events
+    .container-fluid.events-container
+        .row.white-bg
+            
+                
+            .col-xs-12.events-content
+                .half-content
+                    h2.section-header Events
+                    img.img-responsive.img-max-height(src='images/FinalImages/0430.jpg')
+                    p We host events outside our store, at our Brat Haus, to help raise money for community organizations. Check out upcoming events and come support them with us!
+                    a(href="events.html")
+                        .button View All Events
+    // Partners
+    .container-fluid.partners-container
+        .row.white-bg
+            .col-xs-12.partners-content
+                    h2.section-header Partners
+                    img.img-responsive.img-max-height(src='images/FinalImages/Miesfeldlogopartners.png')
+                    p We partner with local grociers, restaurants, non-profits and others to deliever quailty food and philanthropic contributions to the community.
+                    a(href="partners.html")
+                        .button Our Partners
+                    
+    // Our Team
+    .container-fluid.our-team-container
+        .row.section-header
+            .col-xs-12.our-team-content
+                h2 Our Team
+                a(href="team.html")
+                    .button-second Meet The Team
+    // Contact Us
+    .container-fluid.contact-container
+        .row.contact-content.white-bg
+            .col-xs-12
+                h2.contact-header Contact us
+            .col-xs-12.col-sm-6
+                
+                form(action="contact.php" method="post" data-parsley-validate="" data-parsley-ui-enabled="true") 
+                    h4 Reason for Contacting
+                    select(name="reason" value="" required="")
+                        option(value="General" selected) General
+                        option(value="Order Info") Order Info
+                        option(value="Game Processing Information") Game Processing Info
+                        option(value="Partner") Partner
+                        option(value="Employement Information") Employment Info
+
+                    h4 Contact Info
+                    input(type="text" name="name" placeholder="Name" required="")
+                    input(type="text" name="email" placeholder="Email" data-parsley-type="email" required="")
+
+                    h4 Message
+                    textarea(type="text" name="message" placeholder="How can we help you?" required="")
+                    input.button(type="Submit" value="SEND" name="submit" )
+
+            .col-xs-12.col-sm-4.col-sm-offset-1.quick-contact
+                h4 Quick Contact
+                .col-xs-2
+                    .fa.fa-map-marker(aria-hidden='true') 
+                .col-xs-10
+                    a(target="_blank" href="https://www.google.com/maps/place/Miesfeld's+Triangle+Market+Inc/@43.7979539,-87.7733716,17z/data=!3m1!4b1!4m5!3m4!1s0x880358ce0204caa7:0xb69a0b924a436758!8m2!3d43.79795!4d-87.7711829")
+                        p 4811 Venture Drive Sheboygan, Wisconsin 53083
+                .col-xs-2
+                    .fa.fa-phone(aria-hidden='true') 
+                .col-xs-10
+                    a(href="tel:+19205656328")
+                        p 920-565-6328
+
+
+                    
+                        
+                    
+
+
+
+    +footer
+                

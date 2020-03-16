@@ -1,0 +1,51 @@
+extends _layouts/base
+
+include _modules/link/link
+include mixins
+
+
+body(style="padding:0rem;")
+block content
+	+navigation
+	+secondarypage-header('THE MARKET', 'Miesfeld Originals')
+	+secondarypage-hero('images/FinalImages/0308.jpg')
+	+phone
+	.container-fluid.market-content
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Sauces
+				p Hot  
+				p Teriyaki
+				p Barbecue
+				p Apple  Cinnamon Barbecue 
+				p Vidalia Onion Barbeque 
+				p Honey Habenero Barbeque 
+				p Horseradish Barbeque 
+				p Smoke Rib
+				p Sweet Bourbon Glaze 
+				p Pinot Noir Steak 
+				p Vidalia Onion Steak 
+				p Merlot Wine Steak 
+				p Mesquite Steak
+				p Spicy Cajun Steak 
+				p Savory Sirloin Steak 
+				p Robust Ribeye Steak 
+				p Cherry Balsamic Grilling
+				
+
+			.col-xs-12.col-sm-5
+				h3 Marinades
+				p Mayan Grilling 
+				p Mr. Albert’s Steak Seasoning 
+				p Spicy Asian Honey 
+				p Shanghai Tangerine 
+				p Sun Dried Tomato 
+				p Robust Ribeye 
+				p Honey Dijon 
+				p Mesquite Grill
+	.container-fluid
+		.row
+			.col-xs-12.full-width
+				img.img-responsive(src='images/FinalImages/0380.jpg')
+	+contact('Contact Us', 'Contact us for more information or to place an order!')
+	+footer

@@ -1,0 +1,33 @@
+@import 'settings';
+
+.success-container{
+	background-color: $white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 20px;
+}
+
+.success-content{
+	padding-top: 30px;
+	h2{
+		color: $primary;
+	}
+	p{
+		margin-top: 10px;
+	}
+	.button{
+		margin: 40px auto;
+	}
+	img{
+		max-width: 120px;
+		margin: 0px auto 10px;;
+	}
+}
+
+#number{
+	color: $black;
+}

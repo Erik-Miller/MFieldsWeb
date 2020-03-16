@@ -1,0 +1,103 @@
+extends _layouts/base
+
+include _modules/link/link
+include mixins
+
+
+body(style="padding:0rem;")
+block content
+	+navigation
+	+secondarypage-header('THE MARKET', 'Frozen Items')
+	+secondarypage-hero('images/FinalImages/0308.jpg')
+	+phone
+
+	.container-fluid.market-content
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Beef
+				p Miesfeld’s Meat Meatloaf  
+				p Ground beef
+				p Short Ribs
+				p Back Ribs
+			.col-xs-12.col-sm-5
+				h3 Pork 
+				p St Louis Style Ribs
+				p Spare Ribs 
+				p Bacon Wrapped Pork Loin
+				p Ground pork 
+				p Ham and Pork loaf supreme 
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Pot Pie
+				p Chicken
+				p Beef
+				p Ham & Cheese
+				p Brat & Cheddar 
+				p Chicken Bacon Ranch
+				p Chicken Broccoli Cheddar
+				p Chicken Cordon Bleu 
+				p Enchilada
+				p Bacon Ranch Cheeseburger 
+			.col-xs-12.col-sm-5
+				h3 Seafood
+				p Atlantic Salmon Filet 
+				p Northern Pike
+				p Walleye
+				p Haddock (6-8 oz.) 
+				p Pollock
+				p Cod Filets
+				p Tilapia
+				p Wild Yellow Fin Tuna Steaks 
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Chicken
+				p Wings
+				p Thighs
+				p Legs/Drumsticks
+				p Bacon Wrapped Chicken
+				p Balsamic flavored Chicken Breasts 
+				p Crusted Cordon Bleu
+				p Crusted Parmesan Chicken
+				p Crusted Pecan 
+				p Bone in Chicken Breasts 
+				p Ground chicken 
+				p Chicken fillets 
+				p Chicken Corn Dogs
+			.col-xs-12.col-sm-5
+				h3 Pies
+				p Apple Crumb
+				p Blueberry
+				p Cherry
+				p Peach
+				p Pumpkin
+				p Pecan
+				p Strawberry Ruhbarb
+				p Chocolate Cream
+				p French Silk
+				p Coconut Cream
+				p Banana Cream
+				p Lemon Meringue
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Lamb 
+				p Rack of Lamb
+				p Cubed
+				p Ground
+				p Chops
+				p Shank
+			.col-xs-12.col-sm-5
+				h3 Veal
+				p Chops
+				p Cubed
+				p Cutlets
+				p Osso Bucco (cross cut veal shank)
+				p Liver
+				p Ground
+
+	.container-fluid
+		.row
+			.col-xs-12.full-width
+				img.img-responsive(src="/images/FinalImages/0372.jpg")
+	+contact('Contact Us', 'Contact us for more information or to place an order!')
+	+footer
+

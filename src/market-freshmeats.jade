@@ -1,0 +1,156 @@
+extends _layouts/base
+
+include _modules/link/link
+include mixins
+
+
+body(style="padding:0rem;")
+block content
+	+navigation
+	+secondarypage-header('THE MARKET', 'Fresh Meats')
+	+secondarypage-hero('images/FinalImages/0308.jpg')
+	+phone
+	.container-fluid.market-content.fresh-meat
+		.row
+			.col-xs-12.col-sm-3.col-sm-offset-1
+				h3 Beef 
+		.row 
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				p Bone in Rib-eye
+				img.img-responsive(src='images/FinalImages/0356-Edit.jpg')
+			.col-xs-12.col-sm-5
+				p Porter House Steak
+				img.img-responsive(src='images/FinalImages/0362-Edit.jpg')
+		.row
+			.col-xs-12.col-sm-3.col-sm-offset-1
+				p.strong Steaks
+				p Ribeye 
+				p T-Bone
+				p Porterhouse
+				p NY Strips
+				p Tenderloin
+				p Flank Steak
+				p Round Steak
+				p Swiss Steak 
+				p Flat Iron Steak
+
+
+			.col-xs-12.col-sm-3
+				p.strong Roasts
+				p Ribeye
+				p Chuck 
+				p Arm
+				p Tip
+				p Rump 
+
+
+			.col-xs-12.col-sm-3
+				p.strong Ground/Cubed
+				p Stew Meat
+				p Ground Round
+				p Ground Sirloin
+				p Ground Chuck
+				p Ground Beef
+
+		
+		.row
+			.col-xs-12.col-sm-3.col-sm-offset-1
+				h3 Pork 
+		.row 
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				p Center Cut Pork Chop
+				img.img-responsive(src='images/FinalImages/0340-Edit.jpg')
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				p Pork Steak
+				img.img-responsive(src='images/FinalImages/0345-Edit.jpg')
+		.row
+			.col-xs-12.col-sm-3.col-sm-offset-1
+				p.strong Cuts
+				p Bone-In Pork Chops
+				p America’s Cut (thick boneless chops) 
+				p Stuffed Pork Chops 
+				p Butterfly Pork Chops (Regular or Tenderized) 
+				p Smoked Pork Chops
+				p Pork Steaks
+				p Country Style Ribs (Regular and Boneless)
+				p Baby Back Ribs
+
+
+			.col-xs-12.col-sm-3
+				p.strong Roasts
+				p Pork Sirloin Roast
+				p Shoulder Roast
+				p Loin Eye Roast
+
+
+			.col-xs-12.col-sm-3
+				p.strong Ground/Cubed
+				p Pork 
+				p Cubed Pork
+		.row
+			.col-xs-12.col-sm-3.col-sm-offset-1
+				h3 Sandwich Items
+		.row 
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				p Steak Sandwich
+				img.img-responsive(src='images/FinalImages/0367-Edit.jpg')
+			.col-xs-12.col-sm-5
+				p Pork Tenderettes
+				img.img-responsive(src='images/FinalImages/0354-Edit.jpg')
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				p.strong Steaks
+				p Restaurant Steaks 
+				p Spencer Steaks
+				p 3 sizes of Chuck Patties
+				p Sandwich Ribeyes
+				p Sandwich Tenderloins
+				p Pork Tenderettes
+				p Butterfly Pork Chops (regular and tenderized)
+				p Brat Patties
+				p Brat Burgers
+				p Mushroom Swiss Burgers
+				p Pizza Burger 
+				p 10+ varieties of Specialty Seasoned Patties
+
+
+			
+		
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Chicken
+				p Fresh Boneless Skinless Chicken Breasts
+				p Whole Fryers (3.5- 4.5 lbs.)
+				p Cut up Fryers (3.5- 4.5 lbs.)
+				p Chicken Fillet Patties (6 oz.)
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Party Meats (Pre-order Only)
+				p Regular Shredded Roast Beef 
+				p Italian Shredded Roast Beef 
+				p BBQ Shredded Roast Beef 
+				p Regular Shredded Roast Pork 
+				p BBQ Shredded Roast Pork 
+				p Sliced Ham
+				p Turkey
+			.col-xs-12.col-sm-5
+				img.img-responsive(src='images/FinalImages/ham.jpg')
+			
+	+contact('Contact Us', 'Contact us for more information or to place an order!')
+	+footer
+
+//- a.	Beef Cuts Shutterstock image
+//- b.	Bone in Rib eye: #356
+//- c.	Top Sirloin: #360
+//- d.	Porter house Steak: #362
+//- e.	Flank Steak: #364
+//- f.	Steak Sandwiches: #367
+//- g.	Ground Chuck Patties: #369
+//- h.	Pork Cuts Shutterstock image
+//- i.	Center Cut Pork Chop: #340 
+//- j.	Bone in Pork Shoulder Roast: #344
+//- k.	Pork Steak: #345
+//- l.	Pork Tenderloin: #347
+//- m.	Baby Back Pork Ribs: #350
+//- n.	Pork Tenderettes: #354
+//- o.	Chicken Shutterstock image

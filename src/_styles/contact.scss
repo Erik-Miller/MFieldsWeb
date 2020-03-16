@@ -1,0 +1,47 @@
+@import 'settings';
+
+.parsley-error{
+	color: $secondary-lighter;
+	border: 1px solid $secondary-lighter;
+}
+
+.parsley-errors-list{
+	color: $secondary-lighter;
+	padding: 10px 0px;
+}
+
+select{
+	border: 1px solid $grey-darker;
+	background: $white;
+	min-height: 40px;
+}
+
+input,textarea,select{
+	display: block;
+	width: 100%;
+	margin: 10px auto;
+	padding: 10px;
+	border: 1px solid $grey-darker;
+	border-radius: 2px;
+	box-shadow: none !important;
+
+}
+textarea{
+	min-height: 100px;
+}
+
+input[type="submit"]{
+	color: $white;
+	background-color: $primary-lighter;
+	border: none;
+	margin-top: 20px;
+}
+
+.contact-content{
+	margin: 0px auto;
+	background-color: $white;
+
+	form{
+		margin: 50px auto;
+	}
+}

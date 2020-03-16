@@ -1,0 +1,58 @@
+extends _layouts/base
+
+include _modules/link/link
+include mixins
+
+
+body(style="padding:0rem;")
+block content
+	+navigation
+	+secondarypage-header('THE MARKET', 'Bratwurst')
+	+secondarypage-hero('images/FinalImages/0308.jpg')
+	+phone
+	.container-fluid.market-content
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Fresh 
+				p  Grand Champion Bratwurst 🏆
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Frozen
+				p All Beef Bratwurst 🐮
+				p Cajun Bratwurst 
+				p Mushroom and Swiss Bratwurst 🍄
+				p Cheddar Cheese Bratwurst  
+					img(src="../images/FinalImages/cheese.jpg" height= "16px")
+				p Bacon Cheeseburger Bratwurst 🍔
+				p Chipotle & Cheddar Bratwurst
+				p Cordon Blue Bratwurst 
+				p Beer Butter and Onion Bratwurst 🍺 
+				p Jalapeno Cheddar Bratwurst 
+				p Garlic Bratwurst 
+				p Nacho Cheese Bratwurst 
+				p Chorizo Bratwurst  
+				p Italian Bratwurst 🇮🇹
+				p Mini Bratwurst 
+			.col-xs-12.col-sm-5
+				h3 Additional Frozen
+				p Turkey Bratwurst  
+					img(src="../images/FinalImages/turkey.jpg" height= "16px")
+				p Chicken Bratwurst 🐔
+				p Garlic & Onion Bratwurst  
+				p Gyro Bratwurst 
+				p Rueben Bratwurst 
+				p Greek Bratwurst 
+				p Apple Sauerkraut Bratwurst 🍎
+				p Horseradish & Cheddar Bratwurst 
+				p Buffalo Bleu Cheese Chicken
+				p French Dijon Apricot Bratwurst 
+				p Cranberry Cheddar Bratwurst 
+				p Low-salt Bratwurst 
+				p No MSG Bratwurst 
+	.container-fluid
+		.row
+			.col-xs-12.full-width
+				img.img-responsive(src="/images/FinalImages/0230.jpg")
+
+	+contact('Contact Us', 'Contact us for more information or to place an order!')
+	+footer

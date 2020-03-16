@@ -1,0 +1,82 @@
+extends _layouts/base
+
+include _modules/link/link
+include mixins
+
+
+body(style="padding:0rem;")
+block content
+	+navigation
+	+secondarypage-header('','Gifts')
+	+secondarypage-hero('images/FinalImages/0308.jpg')
+	+phone
+	.container-fluid.market-content.gifts
+		.row.gift-card-content
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 We have gift cards available from $5-$500+. Gift cards may be used for any purchase, including shipping. Great for any occasion!
+			.col-xs-12.col-sm-5
+				img.img-responsive.gift-card-image(src='images/FinalImages/miesfeldsgiftcard1.jpg')
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				img.img-responsive(src='images/FinalImages/Gift 1.png')
+				h3 Gift #1 - $19.99
+				p 12 oz. Garlic Summer Sausage 
+				p 2-pk. Landjaeger Sticks
+				p 16 oz. Gibbsville Mild Cheddar	
+				p 3 - Lindt Truffles 	
+			.col-xs-12.col-sm-5
+				img.img-responsive(src='images/FinalImages/Gift 2.png')
+				h3 Gift #2 - $24.99 
+				p 16 oz. Designer Sausage
+				p 16 oz. Gibbsville Mild Cheddar 
+				p 4.5 oz. Landjaeger Sticks 
+				p 4.5 oz. Taco Sticks 
+
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				img.img-responsive(src='images/FinalImages/Gift 3.png')
+				h3 Gift #3 - $29.99
+				p 8 oz. Pine River Cheese Spread 
+				p 16 oz. Gibbsville Mild Cheddar 
+				p 16 oz. Designer Sausage
+				p 12 oz. Plain Summer Sausage 
+				p 2.5 oz. Cow Pie 
+
+			.col-xs-12.col-sm-5
+				img.img-responsive(src='images/FinalImages/Gift 4.png')
+				h3 Gift #4 - $41.99 
+				p 8 oz. Pine River Cheese Spread 
+				p 16 oz. Gibbsville Mild Cheddar 
+				p 24 oz. Plain Summer Sausage 
+				p 24 oz. Garlic Summer Sausage 
+				p 4.5 oz. Landjaeger Sticks
+				p 4.5 oz. Taco Sticks 
+
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				img.img-responsive(src='images/FinalImages/Gift 5.png')
+				h3 Gift #5 - $45.99 
+				p 24 oz. Plain Summer Sausage 
+				p 24 oz. Garlic Summer Sausage 
+				p 16 oz. Designer Sausage
+				p 16 oz. Pepper Coated Summer 
+				p 2-pk. Landjaeger Sticks 
+				p 2 pk. Taco Sticks 
+
+			.col-xs-12.col-sm-5
+				img.img-responsive(src='images/FinalImages/Gift 6.png')
+				h3 Gift #6 - $49.99 
+				p 10 oz. Football Cheese 
+				p 16 oz. Football Summer Sausage 
+				p 12 oz. Summer Sausage 
+				p 2 pk. Landjaeger Sticks 
+				p 2 pk. Taco Sticks 
+				p 16 oz. Pine River Green & Gold Beer Cheese Spread 
+				p 3 oz. Green Bay Puddle
+				p 6.7 oz. Milton’s Crackers 
+				p Packer Bumper Sticker 
+		.row
+			.col-sm-12
+				p.italic.text-center List prices for gift boxes do not include shipping costs. 
+	+contact('Contact Us', 'Contact us for more information or to place an order!')
+	+footer

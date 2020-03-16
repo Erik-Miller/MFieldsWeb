@@ -1,0 +1,17 @@
+extends _layouts/base
+
+include _modules/link/link
+include mixins
+
+
+body(style="padding:0rem;")
+block content
+	.container-fluid.success-container
+		.row
+			.col-xs-12.success-content
+				h2 Oops!
+				p Something went wrong. 
+				p Please try submitting the form again.
+					
+				a#fail-button
+					.button Try Again

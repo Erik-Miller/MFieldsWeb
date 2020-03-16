@@ -1,0 +1,35 @@
+extends _layouts/base
+
+include _modules/link/link
+include mixins
+
+link(href='contact.php')
+
+body(style="padding:0rem;")
+block content
+	+navigation
+	+secondarypage-header('', 'Contact Us')
+	+secondarypage-hero('images/FinalImages/0308.jpg')
+	+phone
+
+	.container-fluid.contact-container
+		.row.contact-content
+			.col-xs-12.col-sm-6.col-sm-offset-3
+				form(action="contact.php" method="post" data-parsley-validate="" data-parsley-ui-enabled="true") 
+					h4 Reason for Contacting
+					select(name="reason" value="" required="")
+						option(value="General" selected) General
+						option(value="Order Info") Order Info
+						option(value="Game Processing Information") Game Processing Info
+						option(value="Partner") Partner
+						option(value="Employement Information") Employment Info
+
+					h4 Contact Info
+					input(type="text" name="name" placeholder="Name" required="")
+					input(type="text" name="email" placeholder="Email" data-parsley-type="email" required="")
+
+					h4 Message
+					textarea(type="text" name="message" placeholder="How can we help you?" required="")
+					input.button(type="Submit" value="SEND" name="submit" )
+	+footer
+

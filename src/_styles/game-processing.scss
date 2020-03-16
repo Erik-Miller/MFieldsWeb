@@ -1,0 +1,55 @@
+@import 'settings.scss';
+
+.warning-container{
+}
+
+.warning-content{
+	padding: 20px;
+	background-color: fade-out($secondary-lighter, .05);
+		position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 999;
+	overflow-y: scroll;
+	min-width: 100%;
+	min-height: 100%;
+	
+}
+
+
+.warning-left{
+	text-align: center;
+
+	h3{
+		text-transform: uppercase;
+	}
+}
+
+.warning-right{
+	text-align: center;
+	margin: 30px 0px;
+	a{
+		border: 1px solid $black;
+		padding: 10px 20px;
+		border-radius: 2px;
+	}
+
+	a:hover{
+		background-color: $black;
+		color: $secondary-lighter;
+	}
+}
+
+@media (min-width: 768px){
+.warning-content{
+	padding-top: 80px;
+
+	p{
+		max-width: 768px;
+		margin: 20px auto;
+	}
+}
+
+}

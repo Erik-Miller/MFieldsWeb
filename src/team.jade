@@ -1,0 +1,54 @@
+extends _layouts/base
+
+include mixins
+
+body(style="padding:0rem;")
+block content
+	+navigation
+	+secondarypage-header('', 'Meet the Team')
+	+secondarypage-hero('images/FinalImages/0308.jpg')
+	+phone
+	.container-fluid
+		.row
+			.col-xs-12.team-content
+				p.twelve-column-content.text-center Miesfield's was founded on family values, strong work ethic, dedication to customer satisfaction an a philanthropic focus to give back to the commmunity. All of our team members are proud to service our customers and partners with the highest quality meats that empowers them to make the best meals for their community.
+
+	.container-fluid
+		.row.team-members
+			.col-xs-12.col-sm-4.team-member
+				img.img-responsive(src="../images/FinalImages/0182.jpg")
+				h4 Chuck Miesfeld
+				p Owner
+			.col-xs-12.col-sm-4.team-member
+				img.img-responsive(src="../images/FinalImages/0121.jpg")
+				h4 Tracy Messner
+				p Operations manager
+			.col-xs-12.col-sm-4.team-member
+				img.img-responsive(src="../images/FinalImages/0123.jpg")
+				h4 Eric Landwehr
+				p Master Sausage Maker
+			.col-xs-12.col-sm-4.team-member
+				img.img-responsive(src="../images/FinalImages/0147.jpg")
+				h4 Jody Ivio
+				p Office Manager
+			.col-xs-12.col-sm-4.team-member
+				img.img-responsive(src="../images/FinalImages/0106.jpg")
+				h4 Hollie Kroll
+				p Assistant Manager
+			.col-xs-12.col-sm-4.team-member
+				img.img-responsive(src="../images/FinalImages/0133.jpg")
+				h4 Travis Fleck
+				p Packaging supervisor
+			
+		.row.team-members
+			.col-xs-12.col-sm-4.team-member.col-sm-offset-2
+				img.img-responsive(src="../images/FinalImages/0103.jpg")
+				h4 Clint Kasprzak
+				p In House Gourmet Chef
+			.col-xs-12.col-sm-4.team-member
+				img.img-responsive(src="../images/FinalImages/0161.jpg")
+				h4 Jane DeVriend
+				p Cashier
+	+contact('Interested in Joining Our Family?', "Please, serious- hard working applications only! Miesfeld's is always happy to take your application and have it on file for future reference.")
+	+footer
+

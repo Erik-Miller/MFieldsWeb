@@ -1,0 +1,170 @@
+mixin phone
+	//Mobile Call Section
+	.container-fluid
+		.row.visible-xs.visible-sm
+			.container-fluid.m-sliver
+				.col-xs-12.call
+					p.fa.fa-phone(aria-hidden='true') 
+					a(href="tel:+19205656328")
+						p 920-565-6328
+						
++phone
+
+
+mixin navigation
+	.container-fluid
+		.row.visible-xs.visible-sm
+			.m-sliver
+				p.fa.fa-map-marker(aria-hidden='true') 
+				a(target="_blank" href="https://www.google.com/maps/place/Miesfeld's+Triangle+Market+Inc/@43.7979539,-87.7733716,17z/data=!3m1!4b1!4m5!3m4!1s0x880358ce0204caa7:0xb69a0b924a436758!8m2!3d43.79795!4d-87.7711829")
+					p.location 4811 Venture Drive Sheboygan, Wisconsin 53083
+
+	.container-fluid.navigation-container
+		.row.navigation
+			.col-xs-12
+				a.navbar-brand(href="index.html")
+					img(src="../images/mfeldlogo.jpg")
+				a.menu.visible-xs.visible-sm Menu
+				ul.desktop-items.hidden-xs.hidden-sm
+					li.dropdown
+						a.dropdown-toggle( href="#", data-toggle="dropdown", role="button", aria-expanded="false" ) The Market 
+							span.fa.fa-lg.fa-angle-down
+						ul.dropdown-menu.pull-right( role="menu" )
+							li
+								a( href="market-originals.html" ) Miesfeld Originals
+							li
+								a( href="market-bratwurst.html" ) Bratwurst
+							li
+								a( href="market-smoked-meats.html" ) Smoked Meats & More
+							li
+								a( href="market-freshmeats.html" ) Fresh Meats
+							li
+								a( href="market-frozenitems.html" ) Frozen Items 
+							li
+								a( href="market-chefs.html" ) Chef's Corner
+							li
+								a( href="market-cheese.html" ) Cheese
+							li
+								a( href="market-wine-beer.html" ) Wine & Beer
+					li 
+						a#button Specials
+					li 
+						a(href="game-processing.html") Game Processing
+					li 
+						a( href="partners.html") Partners
+					li
+								a( href="contact.html" ) Contact Us
+					li.dropdown
+						a.dropdown-toggle( href="#", data-toggle="dropdown", role="button", aria-expanded="false" ) More 
+							span.fa.fa-lg.fa-angle-down
+						ul.dropdown-menu.pull-right( role="menu" )
+							li 
+								a( href="team.html" ) Our Team
+							li
+								a( href="Grill-Tips-Recipes.html" ) Grill Tips & Recipes
+							li
+								a( href="events.html" ) Events
+							li
+								a( href="faqs.html" ) FAQ's
+							li
+								a( href="gifts.html" ) Gifts
+
+	//Creating background for mobile menu
+	.menu-overlay
+		.row.menu-content
+			a.close-button
+				i.icon-remove 
+			.col-xs-12.menu-items
+				ul
+					li
+						a#themarket The Market
+					li 
+						a#mobile-specials(href="#market") Specials
+					li 
+						a(href="game-processing.html")  Game Processing
+					li 
+						a( href="partners.html") Partners
+					li 
+						a( href="team.html" ) Our Team
+					li 
+						a(href="Grill-Tips-Recipes.html" ) Grill Tips & Recipes
+					li 
+						a( href="events.html") Events
+					li 
+						a( href="faqs.html") FAQ's
+					li 
+						a( href="gifts.html") Gifts
+					li 
+						a( href="contact.html") Contact Us
+
+	.market-overlay
+		.row.market-content
+			a.close-button-2
+				i.fa.fa-angle-left 
+				p Back
+			.col-xs-12.market-items
+				ul
+					li 
+						a(href="market-originals.html") Miesfeld Originals
+					li 
+						a(href="market-bratwurst.html") Bratwurst
+					li
+						a(href="market-smoked-meats.html") Smoked Meats & More
+					li
+						a(href="market-freshmeats.html") Fresh Meats
+					li 
+						a(href="market-frozenitems.html") Frozen Items
+					li 
+						a(href="market-chefs.html") Chef's Corner
+					li 
+						a(href="market-cheese.html") Cheese
+					li 
+						a(href="market-wine-beer.html") Wine & Beer	
+
+
++navigation
+
+
+mixin footer
+	.container-fluid.footer-container
+		.row
+			.col-xs-12.col-sm-3.footer-logo
+				img.img-responsive(src="../images/White_MFieldLogo.png")
+			.col-xs-12.col-sm-6.legal
+				legal Copyright MiesFelds 2016. All Rights Reserved.  
+			.col-xs-12.col-sm-3.social  
+				a(href="https://www.facebook.com/MiesfeldsTriangleMarket/") 
+					i.fa.fa-facebook
+					
+				a(href="https://twitter.com/miesfeldmeatmkt")
+					i.fa.fa-twitter
+					
++footer
+
+mixin contact(title, paragraph)
+	.container-fluid.join-our-team-container
+		.row.join-our-team
+			.col-xs-12.text-center
+				h4= title
+				p= paragraph 
+				a(href="contact.html")
+					.button-center Contact us
++contact
+
+
+mixin secondarypage-header(market, title)
+	.container-fluid
+		.row.secondarypage-header
+			.col-xs-12.col-sm-10.col-sm-offset-1
+					h6= market
+					h2= title
+
++secondarypage-header
+
+mixin secondarypage-hero(imageUrl)
+	.container-fluid.hero-container
+			.row
+				.col-xs-12.hero-row
+					img.hero-img.img-responsive(src='#{imageUrl}')
++secondarypage-hero
+

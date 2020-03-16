@@ -1,0 +1,654 @@
+// Normalize Styles
+@import 'node_modules/normalize.css/normalize';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+// Import Modules
+@import 'navigation.scss';
+@import 'settings.scss';
+@import 'team.scss';
+@import 'market-cheese.scss';
+@import 'market-originals.scss';
+@import 'market-wine-beer.scss';
+@import 'gifts.scss';
+@import 'partners.scss';
+@import 'contact.scss';
+@import 'game-processing.scss';
+@import 'success.scss';
+
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+
+
+// Mailchimp Modal Styling -------------------------------------------
+#mailchimp-fields{
+    display: none;
+    padding: 20px 20px;
+    background-color: $grey;
+
+    .mc-close{
+        margin-left: 20px;
+        padding: 10px 20px;
+        line-height: 2.2;
+}
+}
+
+
+#mc_embed_signup form{
+    font-family: 'Open Sans', sans-serif !important;
+
+    h2{
+        text-align: left;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 1.5;
+    }
+    input{
+        border: 1px solid $black;
+        border-radius: 2px !important;
+    }
+    label{
+        font-size: 16px;
+        font-weight: 400px !important;
+    }
+    input[type='submit']{
+        margin-right: 0px;
+        background-color: $primary-lighter;
+        transition: .5s;
+
+        &:hover{
+            background-color: lighten($primary-lighter, 10%);
+            transition: .5s;
+
+        }
+    }
+}
+
+
+.button-full-width{
+    text-align: center;
+    padding: 20px;
+    background-color: goldenrod;
+    color: white;
+}
+
+
+ul{
+list-style-type: none
+}
+
+/* Hero *****/
+
+.hero-row{
+    /*background-image: url(../images/0428.jpg); 
+    background-position: no-repeat center fixed;
+    background-size: cover;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-row img{
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile Sliver*/
+
+.m-sliver{
+    position: relative;
+    z-index: 3;
+    background: $grey-lighter;
+    line-height: 14px;
+    text-align: center;
+    a{
+        color: $black !important;
+    }
+    p{  
+        display: inline-block;
+        padding: 10px 5px;
+        margin: 0px
+    }
+    .fa{
+        margin-right:-5px
+}
+
+.location{
+    font-size: 10px;
+}
+}
+
+.m-sliver .call{
+    padding: 10px;
+}
+/* About Us */
+.about-us{
+    background-color: $white;
+}
+.about-us-content{
+    padding: 20px;
+    background-color: $white;
+    /*background-color: rgba(126,50,34, .9);*/
+    color: $black;
+    text-align: center;
+
+    h2{
+        padding: 20px 0px;
+    }
+}
+
+.who-we-are-content{
+    text-align: center;
+    background: $primary-lighter;
+    color: $white;
+    padding: 20px;
+    h2{
+        padding: 20px 0px;
+    }
+}
+
+/* The Market */
+
+.market-container{
+    background: $secondary;
+    color: $white;
+    h2{
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+}
+
+.market-row-adjust img{
+    margin-bottom: -85%; 
+}
+
+.market-description-small{
+    text-align: center;
+    position: relative;
+    padding: 10px 0px;
+    background-color: $gray-darker;
+}       
+
+    a.market{
+        color: $secondary!important;
+        text-transform: uppercase;
+    
+
+}
+
+/* Specials */
+.specials-row{
+    background-color: $white;
+}
+.specials-content{
+
+padding: 20px;
+    h2{
+        padding: 20px 0px;
+        text-align: center;
+    }
+}
+
+/* Newsletter Section */
+
+.newsletter-container{
+    text-align: center;
+    background-color: $gray-darker;
+    color: $white;
+    padding: 20px;
+}
+
+.newsletter-content{
+    
+    h2{
+        padding: 20px 0px;
+    }
+}
+
+
+
+/* Grill Tips and Recipes *********************************/
+.grill-tips-container{
+    //background: url('../images/FinalImages/GrillTipsRecipes.jpg') no-repeat center center; 
+    //background-size: cover;
+    //height: 280px;
+
+    h2{
+        padding-top: 60px;
+        color: $white;
+
+    }
+
+}
+.grill-tips-content{
+    background: url('../images/FinalImages/GrillTipsRecipes.jpg') no-repeat center center; 
+    background-size: cover;
+    height: 280px;
+    padding: 20px;
+    text-align: center;
+}
+/* Game Processing */
+.game-processing-content{
+    text-align: center;
+    padding: 20px;
+
+    h2{
+        padding: 20px 0px;
+    }
+    img{
+        margin: 20px auto;
+    }
+}
+
+/* Events *****************/ 
+.events.container {
+}
+.events-content{
+    text-align: center;
+    padding: 20px;
+h2{
+    padding: 20px 0px;
+}
+img{
+        margin: 20px auto;
+    }
+
+}
+
+/* Partners **********/
+
+.partners-container{
+}
+
+.partners-content{
+    padding:20px; 
+    text-align: center;
+
+    h2{
+        padding: 20px 0px;
+    }
+    img{
+        margin: 20px auto;
+    }
+
+}
+
+/* Our Team */
+
+.our-team-container{
+    //background: url('../images/FinalImages/TeamHome.jpg') no-repeat center center; 
+    //background-size: cover;
+    //height: 280px;
+
+    h2{
+        padding-top: 70px;
+        color: $white;
+        text-align: center;
+
+    }
+
+}
+.our-team-content{
+    background: url('../images/FinalImages/TeamHome.jpg') no-repeat center center; 
+    background-size: cover;
+    height: 280px;
+    padding: 20px;
+}
+/* Contact us **/
+
+.contact-container{
+    padding: 0px;
+
+    textarea{
+        max-width: 100%;
+    }
+}
+.contact-header{
+    text-align: center;
+    padding: 40px 0px 0px;
+}
+
+
+.quick-contact{
+    text-decoration: none;
+    background-color: $secondary-lighter;
+    padding: 20px;
+
+    h4{
+        padding: 0px 0px 20px;
+        text-align: center;
+    }
+
+    .fa{
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+    .fa-map-marker{
+        padding-top: 15px;
+    }
+    a{
+        color: $black;
+    }
+
+    p{
+        text-align: left;
+    }
+
+}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+
+
+/* Hero *****/
+
+.hero-row{
+    /*background-image: url(../images/0428.jpg); 
+    background-position: no-repeat center fixed;
+    background-size: cover;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-row img{
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile Sliver*/
+
+.m-sliver{
+    position: relative;
+    z-index: 3;
+    background: $grey-lighter;
+    line-height: 14px;
+    text-align: center;
+    p{  
+        display: inline-block;
+        padding: 10px 5px;
+        margin: 0px
+    }
+    .fa{
+        margin-right:-5px
+}
+
+.location{
+    font-size: 10px;
+}
+}
+
+.m-sliver .call{
+    padding: 10px;
+}
+/* About Us */
+
+.about-us-content{
+    padding: 0px 20px;
+    background-color: $white;
+    /*background-color: rgba(126,50,34, .9);*/
+    color: $black;
+    text-align: left;
+
+    h2,p{
+        
+    }
+}
+
+.who-we-are-content{
+    text-align: center;
+    background: $primary-lighter;
+    color: $white;
+    padding: 20px;
+    h2{
+        padding: 20px 0px;
+    }
+}
+
+/* The Market */
+
+.market-container{
+    background: $secondary;
+    color: $white;
+    h2{
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+}
+
+.market-row-adjust img{
+    margin-bottom: -85%; 
+}
+
+.market-description-small{
+    text-align: center;
+    position: relative;
+    padding: 10px 0px;
+    background-color: $gray-darker;
+}       
+
+    a.market{
+        color: $secondary !important;
+        text-transform: uppercase;
+    
+
+}
+
+/* Specials */
+.specials-content{
+text-align: left;
+padding: 60px;
+    h2{
+        padding: 20px 0px;
+        text-align: left;
+    }
+}
+
+/* Newsletter Section */
+.newsletter-row{
+    background-color: $gray-darker;
+    margin: 0px auto;
+    padding: 40px;
+}
+.newsletter-container{
+    background-color: transparent;
+    text-align: left;
+    color: $white;
+    padding: 0px;
+}
+
+.newsletter-content{
+    background-color: $gray-darker;
+    h2{
+        padding: 20px 0px;
+    }
+
+}
+.newsletter-button{
+    padding-top: 20px;
+}
+
+
+/* Grill Tips and Recipes *********************************/
+.grill-tips-container{
+    //background: url('../images/FinalImages/GrillTipsRecipes.jpg') no-repeat center center; 
+    //background-size: cover;
+    //height: 400px;
+
+    h2{
+        padding-top: 120px;
+        color: $white;
+
+    }
+
+}
+.grill-tips-content{
+    background: url('../images/FinalImages/GrillTipsRecipes.jpg') no-repeat center center; 
+    background-size: cover;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+}
+/* Game Processing */
+.game-processing-container{
+    
+}
+
+.game-processing-content{
+    border-bottom: 5px solid $grey-lighter;
+    text-align: center;
+    padding: 40px;
+
+    h2{
+        padding: 20px 0px;
+    }
+    img,.button{
+        margin: 20px auto;
+    }
+}
+
+/* Events *****************/ 
+.events.container {
+
+}
+.events-content{
+    text-align: center;
+    padding: 40px 40px 40px;
+h2{
+    padding: 20px 0px 20px;
+}
+p{
+    max-width: 768px;
+    margin: 10px auto;
+}
+img, .button{
+        margin: 20px auto;
+    }
+
+img{
+    border-radius: 10px;
+}
+
+}
+
+/* Partners **********/
+
+.partners-container{
+    text-align: center;
+    
+
+
+}
+
+.partners-content{
+border-top: 5px solid $grey-lighter;
+    padding:40px; 
+    text-align: center;
+
+    h2{
+        padding: 20px 0px;
+    }
+    img,.button,p{
+        margin: 20px auto;
+    }
+
+    p{
+        max-width: 600px;
+    }
+}
+
+/* Our Team */
+
+.our-team-container{
+    //background: url('../images/FinalImages/TeamHome.jpg') no-repeat top center; 
+    //background-size: cover;
+    //height: 400px;
+    
+
+    h2{
+        padding-top: 120px;
+        color: $white;
+        text-align: center;
+
+    }
+
+}
+.our-team-content{
+    background: url('../images/FinalImages/TeamHome.jpg') no-repeat top center; 
+    background-size: cover;
+    height: 400px;
+    padding: 20px;
+}
+
+// Contact Section
+.contact-header{
+    text-align: center;
+    padding: 40px 0px 0px;
+}
+
+.contact-content{
+    padding: 20px;
+}
+.quick-contact{
+    border: 1px solid $secondary-lighter;
+    background-color: transparent;
+    padding: 28px 20px;
+    text-align: left;
+    margin-top: 125px;
+
+    h4{
+        margin: 0px;
+        padding: 0px 0px 20px;
+    }
+
+    .fa{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .fa-map-marker{
+        padding-top: 15px;
+    }
+
+    p{
+        text-align: left;
+    }
+
+}
+
+
+  }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+.about-us-content{
+    padding: 40px 100px 20px 0px;
+    background-color: $white;
+    /*background-color: rgba(126,50,34, .9);*/
+    color: $black;
+    text-align: left;
+    max-width: 600px;
+
+    h2{
+        
+    }
+}
+.who-we-are-content{
+    text-align: center;
+    background: $primary-lighter;
+    color: $white;
+    padding: 20px;
+    h2{
+        padding: 20px 0px;
+    }
+    p{
+        max-width: 768px;
+        margin: 0px auto;
+    }
+}
+
+
+}

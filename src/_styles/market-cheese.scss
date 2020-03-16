@@ -1,0 +1,77 @@
+@import 'settings.scss';
+@import 'navigation.scss';
+
+.secondarypage-header h6{
+	padding: 10px;
+	margin-bottom: -20px;
+}
+
+.market-content{
+	padding:10px 20px;
+	text-align: center;
+	margin: 0px auto;
+	.row{
+		background: $white;
+	}
+	h3{
+		padding: 5px 0px;
+	}
+
+	img{
+		padding: 0px;
+		margin: 0px;
+		border-radius: 5px;
+	}
+
+
+}
+
+.fresh-meat p{
+	padding: 15px 0px 5px;
+
+}
+
+.image-caption{
+	text-align: center;
+	padding: 20px;
+	background: $secondary;
+	color: $white;
+
+	p{
+		max-width: 768px;
+		font-size: 18px;
+		margin: auto;
+	}
+}
+
+
+
+
+@media (min-width: 768px){
+.secondarypage-header h6{
+	padding: 10px;
+	margin-bottom: -20px;
+}
+
+.market-content {
+	padding: 20px 20px;
+	.row{
+	text-align: left;
+	margin: 0px auto;
+	padding: 20px;
+
+	h3{
+		padding: 20px 0px 0px;
+		margin: 0px;
+	}
+}
+}
+
+.fresh-meat p{
+	padding: 0px;
+
+}
+
+}
+
+

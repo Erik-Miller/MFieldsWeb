@@ -1,0 +1,37 @@
+.gift-card-image{
+	max-height: 125px;
+	border-radius: 5px;
+	margin: 20px auto 40px !important;
+
+}
+
+.gifts{
+	margin: 0px auto !important;
+
+
+img{
+	border-radius: 10px;
+
+}
+}
+
+
+
+@media (min-width: 768px){
+.gifts{
+		padding: 0px;
+	}
+.gift-card-content{
+	margin: 0px auto !important;
+
+	img{
+		margin-left: auto;
+
+	}
+}
+
+.gift-card-image{
+	max-height: 125px;
+	border-radius: 5px;
+}
+}

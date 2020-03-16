@@ -1,0 +1,53 @@
+extends _layouts/base
+
+include _modules/link/link
+include mixins
+
+
+body(style="padding:0rem;")
+block content
+	+navigation
+	+secondarypage-header('','Frequently Asked Questions')
+	+secondarypage-hero('images/FinalImages/0308.jpg')
+	+phone
+	.container-fluid.market-content.fresh-meat
+		.row
+			.col-xs-12.col-sm-10.col-sm-offset-1
+				h3 What are your store hours? 
+				p Mon. – Fri.: 8:00 AM – 5:30 PM | Saturday: 8:00 AM – 3:00 PM | Sunday: Closed
+
+				h3 Am I able to track my order via the website?
+				p Currently, we do not have an order tracking system within our website. If you have any questions about your order, please call us at (920) 565-6328.
+
+				h3 When does my order ship?
+				p We make every effort to ship your order on the same day as we receive it, however, due to shipping pickups, your order may not ship until the following business day. If you have any questions about your order, please call us at (920) 565-6328.
+
+
+				h3 What is the difference between a Spencer Steak and a Restaurant Steak?
+				p Restaurant Steak meat comes from the hindquarter of the animal. We use inside round meat that is 100% fat free. Then we add a little beef suet to ensure meat retains its natural juices. Spencer meat comes from the front quarter of the animal. We use the rib-eye roll and leave the natural fat in the steak. They are both processed the same way and they both have NO CORDS.
+
+
+				h3 How do I know we can be sure that the products we buy are fresh and wholesome?
+				p Miesfeld’s Market is a state inspected plant. We have very, very strict sanitation guidelines that we must follow. A well trained sanitation crew comes in for eight hours every evening and thoroughly cleans our processing rooms. Another crew comes in early in the morning to inspect their work. All of our products are code dated and come with our quality guarantee.
+
+
+
+				h3 What makes Miesfeld’s different from other stores?
+				p Miesfeld’s has been in business since 1941. Meat and Sausage is our only business and we know it well. We serve over 125 area restaurants, we make over 50 different kinds of sausages and handle in excess of 400 meat items. We are a one stop shop for all your cooking and grilling needs. Charcoal, lighter fluid, condiments, sauces, marinades, homemade BBQ sauces are just a few of the items we carry. We feature over 150 fine wines that were carefully selected by our wine expert.
+
+				h3 Can I order online?
+				p We do not offer online ordering, but all of our products may be shipped.  Most items must ship next day air in cooler boxes. Our shipping specialists can give you the costs involved in shipping our products to ensure you get the safest freshest product.
+	.container-fluid
+		.row
+			.col-xs-12.full-width
+				img.img-responsive(src="/images/FinalImages/0450.jpg")
+	//- .container-fluid
+	//- 	.row
+	//- 		.col-xs-12.full-width
+	//- 			img.img-responsive(src="/images/FinalImages/0096-Edit.jpg")
+	
+
+	
+
+	+contact('Contact Us', 'Contact us for more information or to place an order!')
+	+footer

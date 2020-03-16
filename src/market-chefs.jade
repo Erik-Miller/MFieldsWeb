@@ -1,0 +1,66 @@
+extends _layouts/base
+
+include _modules/link/link
+include mixins
+
+
+body(style="padding:0rem;")
+block content
+	+navigation
+	+secondarypage-header('THE MARKET', "Chef's Corner")
+	+secondarypage-hero('images/FinalImages/0308.jpg')
+	+phone
+	.container-fluid.market-content
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Chicken Breasts
+				p Greek Marinated Gyro Stuffed
+				p Chicken Cordon Bleu supreme 
+				p Mushroom & Herbed Cheese
+				p Apple Sausage & Sweet Potato
+				p Italian Sausage & Wild Rice
+			.col-xs-12.col-sm-5
+				h3 Pork
+				p Pork Florentine
+				p Apple Jack Barley Stuffed
+				p Rockefeller
+				p Al Capone Roasts 
+				p Rolled Italian Pork
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Steak
+				p Apple pie, Bacon wrapped Tenderloins 
+				p Mushroom & Herbed Cheese stuffed sirloins 
+				p Tenderloin & Asparagus Roulades
+			.col-xs-12.col-sm-5
+				h3 Side Dishes
+				p Twice baked potatoes
+				p Cheesy mixed rice & broccoli 
+				p Cheesy Hash brown casserole
+				p Cheesy Brat-tini Casserole 
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Kabobs
+				p Pork loin with vegetables
+				p Tenderloin with vegetables 
+				p Chicken with vegetables 
+				p Combo with vegetables 
+			.col-xs-12.col-sm-5
+				h3 Dips & Spreads
+				p Dill feta & garlic cream cheese spread 
+				p Chipped Beef
+				p Artichoke 
+				p Spinach 
+				p Beer Cheese
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 More
+				p Gyro Sandwiches 
+				p Cheese & Sausage Trays
+				p Party Platters 
+	.container-fluid
+		.row
+			.col-xs-12.full-width
+				img.img-responsive(src="/images/FinalImages/0096-Edit.jpg")
+	+contact('Contact Us', 'Contact us for more information or to place an order!')
+	+footer

@@ -1,0 +1,11 @@
+@import 'settings.scss';
+
+.originals img{
+	margin: 20px 0px;
+}
+@media (min-width: 992px){
+.originals img{
+	margin: 40px 0px 20px; 
+
+}
+}

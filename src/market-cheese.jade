@@ -1,0 +1,69 @@
+extends _layouts/base
+
+include _modules/link/link
+include mixins
+
+
+body(style="padding:0rem;")
+block content
+	+navigation
+	+secondarypage-header('THE MARKET', 'Cheese')
+	+secondarypage-hero('images/FinalImages/0308.jpg')
+	+phone
+	.container-fluid.market-content
+		.row
+			.col-xs-12.col-sm-5.col-sm-offset-1
+				h3 Laack's 
+				p Bacon cheese
+				p Salami Cheese
+				p Pepper Jack
+				p Smoked String Cheese
+				p Pepper String Cheese 
+				p Garlic & Herb Curds
+				p Hickory Smoked Cheddar Cheese 
+				p Mixed Curds 
+				p Mozzarella Whips 
+				p Peppercorn Ranch Curds 
+				p Smoked Baby Swiss Cheese 
+				p Vegetable Jack Cheese  
+				p Aged Cheddar  
+				p Onion Cheese 
+				p Dill curds 
+				p Hot Pepper Curds
+				h3 Satori 
+				p Gold Bella Vitano 
+				p Merlot Bella Vitano 
+				p Black Pepper Bella Vitano
+				p Raspberry Bella Vitano 
+				p Rosemary & Olive Asiago 
+			.col-xs-12.col-sm-5
+				h3 Deer Creek
+				p The Stag
+				p The Doe
+				p The Robin
+				h3 Gibbsville
+				p Age Cheddar Cheese
+				p Colby Cheese
+				p Fresh Cheese Curds
+				p Medium Cheddar Cheese
+				p Two-Tone Cheese
+				h3 Vern’s
+				p Aged Swiss
+				p Baby Swiss
+				p Sharp Brick
+				p Super Sharp White Cheddar
+				p Super Sharp Cheddar
+
+	.container-fluid
+		.row
+			.col-xs-12.image-caption
+				p We carry one of Sheboygan’s largest selections of local and Wisconsin cheeses in our store. Come in and choose from over 100 varieties!
+			.col-xs-12.full-width
+				img.img-responsive(src="/images/FinalImages/0011-Edit.jpg")
+	+contact('Contact Us', 'Contact us for more information or to place an order!')
+		
+
+	+footer
+                
+
+
